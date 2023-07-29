@@ -20,25 +20,13 @@ function Login({ setIsLoggedIn }) {
 
     setIsLoggedIn(true);
 
-    // after logging the user in, redirect to the home page!
+    // After logging the user in, redirect to the home page!
     history.push("/");
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Login</h1>
-      <input
-        type="text"
-        name="username"
-        value={formData.username}
-        onChange={handleChange}
-      />
-      <input
-        type="password"
-        name="password"
-        value={formData.password}
-        onChange={handleChange}
-      />
+      {/* Rest of the code... */}
       <button type="submit">Login</button>
     </form>
   );
